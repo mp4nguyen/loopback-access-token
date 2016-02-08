@@ -12,7 +12,7 @@ module.exports = function findForRequest(app) {
         }
         var id = tokenIdForRequest(req, options);
         var tokenId = tokenIdForRequest(req, options);
-        console.log("modified -> AccessToken.findForRequest begin ......<<<<<<<<<<<<<<>>>>>>>>>>>>>>tokenId=",tokenId);
+        console.log("Loopback-access-token begin ......<<<<<<<<<<<<<<>>>>>>>>>>>>>>tokenId=",tokenId);
         if (id) {
 
 
@@ -46,7 +46,7 @@ module.exports = function findForRequest(app) {
                         var secondsToLive = assessTokenObject.ttl;
                         var isValid = elapsedSeconds < secondsToLive;
 
-                        console.log(" <><><<><><> modified ->  now =",now," created = ",created," elapsedSeconds=",elapsedSeconds,"secondsToLive =",secondsToLive,"isValid=",isValid);
+                        console.log(" Loopback-access-token now =",now," created = ",created," elapsedSeconds=",elapsedSeconds,"secondsToLive =",secondsToLive,"isValid=",isValid);
 
                         if (isValid) {
                             cb(null, assessTokenObject);
