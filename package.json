@@ -1,0 +1,20 @@
+{
+    "name": "loopback-access-token",
+    "version": "0.0.1",
+    "description": "Override loopback access token to connect the the Authorization server",
+    "main": "findForRequest.js",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/mp4nguyen/loopback-access-token.git"
+    },
+    "keywords": [
+        "escape",
+        "unescape",
+        "html"
+    ],
+    "author": "Phuong Nguyen<mp4nguyen@gmail.com>",
+    "license": "BSD-2-Clause",
+    "bugs": {
+        "url": "https://github.com/mp4nguyen/loopback-access-token.git"
+    }
+}
